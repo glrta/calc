@@ -1,0 +1,61 @@
+:root {
+    --accentcolor: rgb(255, 0, 0);
+    --basecolor: rgb(141, 217, 252);
+    --mutecolor: rgb(255, 255, 255);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.calculator {
+    width: auto;
+    background: var(--basecolor);
+    padding: 5px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+}
+input,
+button {
+    height: 70px;
+    margin: 2px;
+    border: none;
+    font-size: 18px;
+}
+button {
+    width: 70px;
+    background-color: var(--mutecolor);
+    color: var(--accentcolor);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+button:hover {
+    background: var(--basecolor);
+    color: var(--mutecolor);
+}
+button:nth-child(4) {
+    background: var(--accentcolor);
+    color: var(--mutecolor);
+}
+button:nth-child(4):hover {
+    background: var(--basecolor);
+}
+button:focus {
+    outline: none;
+}
+input {
+    flex-grow: 2;
+    text-align: end;
+    padding: 5px;
+}
