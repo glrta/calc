@@ -1,17 +1,21 @@
 :root {
-    --accentcolor: rgb(255, 0, 0);
-    --basecolor: rgb(141, 217, 252);
+    --accentcolor: rgb(255, 50, 50);
+    --basecolor: rgb(154, 221, 255);
     --mutecolor: rgb(255, 255, 255);
 }
 * {
     box-sizing: border-box;
+    color: var(--accentcolor);
+    font-size: 25px;
+    font-weight: bold;
 }
 body {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    font-family: sans-serif;
+    
 }
 .calculator {
     width: auto;
@@ -25,37 +29,45 @@ body {
 .row {
     display: flex;
 }
-input,
+.row:nth-child(1) {
+    padding-bottom: 3px;
+}
+.output,
 button {
-    height: 70px;
-    margin: 2px;
+    height: 88px;
     border: none;
-    font-size: 18px;
+    margin: 2px;
+    background-color: var(--mutecolor);
 }
 button {
-    width: 70px;
-    background-color: var(--mutecolor);
-    color: var(--accentcolor);
-    font-weight: bold;
+    width: 88px;
     cursor: pointer;
-    font-size: 25px;
+}
+button:nth-child(4) {
+    background: var(--accentcolor);
+    color: var(--mutecolor);
+    margin-left: 5px;
 }
 button:hover {
     background: var(--basecolor);
     color: var(--mutecolor);
 }
-button:nth-child(4) {
-    background: var(--accentcolor);
-    color: var(--mutecolor);
-}
-button:nth-child(4):hover {
-    background: var(--basecolor);
-}
 button:focus {
     outline: none;
+    background: var(--basecolor);
+    color: var(--mutecolor);
 }
-input {
+.output {
     flex-grow: 2;
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 321px;
+    overflow: hidden;
+}
+.display {
     padding: 5px;
+    font-size: 30px;
+    text-align: right;
+    white-space: nowrap;
 }
