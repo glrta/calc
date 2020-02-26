@@ -62,7 +62,7 @@ button:focus {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    max-width: 321px;
+    max-width: 276px;
     overflow: hidden;
 }
 .display {
