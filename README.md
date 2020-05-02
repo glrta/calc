@@ -18,6 +18,6 @@ Calculator precourse project for Founders and Coders cohort 19.
 
 ## Status
 
-Core reviewd in March 2020. Code last edit: 26 Feb 2020.
+Core reviewed in March 2020. Code last edited on 26 Feb 2020.
 
 
