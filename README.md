@@ -1,6 +1,8 @@
 # Calculator - FAC19 precourse project
 
 Calculator precourse project for Founders and Coders cohort 19.
+
+![screenshot](screenshot.png)
  
 ## Precourse material
 
@@ -14,7 +16,8 @@ Calculator precourse project for Founders and Coders cohort 19.
 * CSS
 * Vanilla JavaScript
 
-### Project status
+## Status
 
-In progress
+Core reviewd in March 2020. Code last edit: 26 Feb 2020.
+
 
