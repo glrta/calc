@@ -2,7 +2,7 @@
 
 Calculator precourse project for Founders and Coders cohort 19.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot-a.png)
  
 ## Precourse material
 
